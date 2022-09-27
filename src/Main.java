@@ -1,3 +1,4 @@
+import java.sql.SQLOutput;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -52,5 +53,42 @@ public class Main {
         cupcakeMenu.add(chocolate);
 
         System.out.println(cupcakeMenu);
+
+        ArrayList<Drink> DrinkMenu= new ArrayList<Drink>();
+        Drink water = new Drink();
+        Soda soda = new Soda();
+        Milk milk = new Milk();
+
+        System.out.println("How much do you want to charge for water?");
+
+        String waterPrice = input.nextLine();
+
+        double waterPriceDbl = Double.parseDouble(waterPrice);
+
+        water.setPrice(waterPriceDbl);
+
+        System.out.println("How much do you want to charge for soda?");
+
+        String sodaPrice = input.nextLine();
+
+        double sodaPriceDbl = Double.parseDouble(sodaPrice);
+
+        soda.setPrice(sodaPriceDbl);
+
+        System.out.println("How much do you want to charge for milk?");
+
+        String milkPrice = input.nextLine();
+
+        double milkPriceDbl = Double.parseDouble(milkPrice);
+
+        milk.setPrice(milkPriceDbl);
+
+        DrinkMenu.add(soda);
+
+        DrinkMenu.add(milk);
+
+        DrinkMenu.add(water);
+
+
     }
     }
