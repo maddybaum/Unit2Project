@@ -54,7 +54,7 @@ public class Main {
 
         System.out.println(cupcakeMenu);
 
-        ArrayList<Drink> DrinkMenu= new ArrayList<Drink>();
+        ArrayList<Drink> drinkMenu= new ArrayList<Drink>();
         Drink water = new Drink();
         Soda soda = new Soda();
         Milk milk = new Milk();
@@ -83,12 +83,12 @@ public class Main {
 
         milk.setPrice(milkPriceDbl);
 
-        DrinkMenu.add(soda);
+        drinkMenu.add(soda);
 
-        DrinkMenu.add(milk);
+        drinkMenu.add(milk);
 
-        DrinkMenu.add(water);
+        drinkMenu.add(water);
 
-
+        new Order(cupcakeMenu, drinkMenu);
     }
     }
