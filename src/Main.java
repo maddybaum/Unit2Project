@@ -90,5 +90,9 @@ public class Main {
         drinkMenu.add(water);
 
         new Order(cupcakeMenu, drinkMenu);
+
+        new CreateFile();
+
+        new WriteToFile(order);
     }
     }
